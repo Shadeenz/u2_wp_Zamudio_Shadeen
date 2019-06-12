@@ -138,7 +138,7 @@ Robot {
   controller "u2_wp_Zamudio_Shadeen"
 }
 Solid {
-  translation 0.8700000000000006 0 0.16
+  translation 0.8700000000000006 0.24000000000000005 0.16
   children [
     Shape {
       appearance PBRAppearance {
