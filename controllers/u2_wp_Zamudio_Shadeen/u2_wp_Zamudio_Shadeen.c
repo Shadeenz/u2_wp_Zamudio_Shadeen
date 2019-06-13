@@ -97,9 +97,9 @@ int main(int argc, char **argv)
 
     if (pressed_key == WB_KEYBOARD_UP){
      vl_value=-3; /*1rad/s=1m/s*/
-     vr_value=-3;
+     vr_value=-3; /*1rad/s=1m/s*/
      rpml_value=-60.8234; /*RPM= v/(radio(0.10472))*/
-     rpmr_value=-60.8234;
+     rpmr_value=-60.8234; /*RPM= v/(radio(0.10472))*/
      wb_motor_set_velocity(wheel_right, -3);
      wb_motor_set_velocity(wheel_left,  -3);
      printf("Velocity right wheel  %lf m/s\n", vr_value );
@@ -111,9 +111,9 @@ int main(int argc, char **argv)
      wb_motor_set_velocity(wheel_right, 0.1);
      wb_motor_set_velocity(wheel_left,  0.1);
      vl_value=0.1; /*1rad/s=1m/s*/
-     vr_value=0.1;
+     vr_value=0.1; /*1rad/s=1m/s*/
      rpml_value=2.0274; /*RPM= v/(radio(0.10472))*/
-     rpmr_value=2.0274;
+     rpmr_value=2.0274; /*RPM= v/(radio(0.10472))*/
      printf("Velocity right wheel   %lf m/s\n", vr_value );
      printf("Velocity left wheel  %lf m/s\n", vl_value );
      printf("RPM left wheel  %lf \n", rpml_value );
@@ -123,9 +123,9 @@ int main(int argc, char **argv)
      wb_motor_set_velocity(wheel_left,   5);
      wb_motor_set_velocity(wheel_right, -5);
      vl_value=5; /*1rad/s=1m/s*/
-     vr_value=-5;
-     rpml_value=101.3723;
-     rpmr_value=-101.3723;
+     vr_value=-5; /*1rad/s=1m/s*/
+     rpml_value=101.3723; /*RPM= v/(radio(0.10472))*/
+     rpmr_value=-101.3723; /*RPM= v/(radio(0.10472))*/
      printf("Velocity right wheel   %lf m/s\n", vr_value );
      printf("Velocity left wheel  %lf m/s\n", vl_value );
      printf("RPM left wheel  %lf \n", rpml_value );
@@ -135,9 +135,9 @@ int main(int argc, char **argv)
      wb_motor_set_velocity(wheel_left,  -5);
      wb_motor_set_velocity(wheel_right,  5);
      vl_value=-5; /*1rad/s=1m/s*/
-     vr_value=5;
-     rpml_value=-101.3723;
-     rpmr_value=+101.3723;
+     vr_value=5; /*1rad/s=1m/s*/
+     rpml_value=-101.3723; /*RPM= v/(radio(0.10472))*/
+     rpmr_value=+101.3723; /*RPM= v/(radio(0.10472))*/
      printf("Velocity right wheel   %lf m/s\n", vr_value );
      printf("Velocity left wheel  %lf m/s\n", vl_value );
      printf("RPM left wheel  %lf \n", rpml_value );
