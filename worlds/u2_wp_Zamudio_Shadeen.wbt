@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.3172443932135793 0.9365667617215259 0.1489922676282317 0.8869141482249077
-  position 2.4012963532779317 0.9743204444645783 1.7316526517979498
+  orientation -0.9997601140782786 0.015192691030424659 0.015776451991546866 0.5656971914785939
+  position 0.8169269304064721 2.831004574667914 4.6001071334879535
 }
 TexturedBackground {
 }
@@ -51,12 +51,13 @@ Robot {
         }
         RotationalMotor {
           name "motor_right"
-          maxTorque 30
+          maxVelocity 52.3598
+          maxTorque 1.15
         }
       ]
       endPoint DEF WHEEL1 Solid {
-        translation -0.05 0 0.06
-        rotation -1 0 0 1.57
+        translation -0.04986351996991146 0.002512121656639714 0.060000000000000005
+        rotation 1 0 0 1.57
         children [
           DEF SH_WHEEL Shape {
             appearance PBRAppearance {
@@ -86,12 +87,13 @@ Robot {
         }
         RotationalMotor {
           name "motor_left"
-          maxTorque 30
+          maxVelocity 52.3598
+          maxTorque 1.15
         }
       ]
       endPoint Solid {
-        translation -0.05 0 -0.06
-        rotation -1 0 0 1.57
+        translation -0.05161149370379927 0.0010565499530129716 -0.06
+        rotation 1 0 0 1.57
         children [
           DEF WH_SHAPE2 Shape {
             appearance PBRAppearance {
@@ -116,7 +118,7 @@ Robot {
       children [
         Shape {
           appearance PBRAppearance {
-            baseColor 0.1803921568627451 0.20392156862745098 0.21176470588235294
+            baseColor 0.45098039215686275 0.8235294117647058 0.08627450980392157
           }
           geometry Box {
             size 0.02 0.01 0.01
@@ -134,11 +136,12 @@ Robot {
   ]
   boundingObject USE GR_BODY
   physics Physics {
+    mass 3
   }
   controller "u2_wp_Zamudio_Shadeen"
 }
 Solid {
-  translation 0.8700000000000006 0.24000000000000005 0.16
+  translation 1.9300000000000015 0.24000000000000005 0.16
   children [
     Shape {
       appearance PBRAppearance {
@@ -149,4 +152,19 @@ Solid {
       }
     }
   ]
+}
+Solid {
+  translation 0.5001513559766275 0 -0.19013531529787325
+  rotation 0 1 0 1.57
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9882352941176471 0.9137254901960784 0.30980392156862746
+      }
+      geometry Box {
+        size 0.1 0.1 1
+      }
+    }
+  ]
+  name "solid(1)"
 }
